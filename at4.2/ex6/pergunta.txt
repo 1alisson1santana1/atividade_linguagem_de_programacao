@@ -1,0 +1,5 @@
+pergunta: o que acontece se você esquecer mathlib.o no
+comando de ligação? 
+
+resposta: Ocorre um erro de ligação (linker error) gerado pelo ligador (ld),
+pois ele não encontra o código de máquina compilado das funções maior e fatorial.
