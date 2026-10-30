@@ -1,0 +1,12 @@
+1. No exercício 2, por que dobra consegue alterar o vetor do main sem return ?
+
+R= Por causa do ponteiro int *v, de modo que mesmo após a exercução da pilha os valores dobrados permanecem, pois o ponteiro acessou o endereço de cada indíce do array.
+
+2. No exercício 5, cole dois endereços consecutivos de int e mostre a diferença em bytes.
+
+R= O endereço de v[2] é 0x7ffe87303f48 e o endereço de v[3] é 0x7ffe87303f4c, onde o último número de ambos possui 4 bytes de diferença.
+
+3. No exercício 6, explique em uma frase o que o AddressSanitizer detectou e por que, sem ele, o erro
+poderia passar despercebido. 
+
+R= O sanitizer ele envoltou a os bytes do array com bytes envenenados e utilizou um checagem em tempo de execução que verifica quando o array tenta ultrapassar o limite definido pelas redzone.
